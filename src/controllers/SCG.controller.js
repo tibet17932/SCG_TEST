@@ -17,6 +17,10 @@ exports.findRestaurantsInBangsue = function(req, res) {
     };
     googlePlaces.textSearch(parameters, function(error, response) {
         if (error) throw error;
-        res.json(response.results)
+        if (response.results.length === 0) {
+            return res.send(response.error_message)
+        } else {
+            return res.json(response.results)
+        }
     });
 };
