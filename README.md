@@ -7,3 +7,11 @@ node server.js
 ```
 node server.js
 ```
+###  API  findingXYZ
+```
+ http://localhost:3000/SCG/findingXYZ
+ ```
+ ###  API  findRestaurantsInBangsue
+  ```
+http://localhost:3000/SCG/findRestaurantsInBangsue 
+ ```
